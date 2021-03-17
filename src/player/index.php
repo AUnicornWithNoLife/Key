@@ -39,6 +39,7 @@ $file = $films["files"][$film];
         <?php
         
         echo "var pos = $confrom";
+        echo "var film = '$film'";
 
         ?>
     </script>
@@ -50,6 +51,6 @@ $file = $films["files"][$film];
         <h2><a href='../'>Home</a></h2>
     </div>
     
-    <video width="100%" height="75%" controls='true' src="<?php echo "../data/films/$file" ?>" type="video/mp4"></video>
+    <video id='play' width="100%" height="75%" controls='true' src="<?php echo "../data/films/$file" ?>" type="video/mp4"></video>
 </body>
 </html>
