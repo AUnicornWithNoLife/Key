@@ -1,0 +1,1 @@
+console.log("%cDO NOT write any code here without understanding what you are doing", "color:red; font-size:50px");
