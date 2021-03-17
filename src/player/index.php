@@ -31,18 +31,17 @@ $file = $films["files"][$film];
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 
-    <script src='../code/js/setcont.js'></script>
-    <script src='../code/js/player.js'></script>
-    <script src='../code/js/console.js'></script>
-
     <script>
         <?php
         
-        echo "var pos = $confrom";
-        echo "var film = '$film'";
+        echo "var pos = $confrom; ";
+        echo "var film = '$film';";
 
         ?>
     </script>
+
+    <script src='../code/js/setcont.js'></script>
+    <script src='../code/js/console.js'></script>
 </head>
 <body>
     <h1><?php echo $film; ?></h1>
@@ -51,6 +50,8 @@ $file = $films["files"][$film];
         <h2><a href='../'>Home</a></h2>
     </div>
     
-    <video id='play' width="100%" height="75%" controls='true' src="<?php echo "../data/films/$file" ?>" type="video/mp4"></video>
+    <video id='ptf' width="100%" height="75%" controls='true' src="<?php echo "../data/films/$file" ?>" type="video/mp4"></video>
 </body>
 </html>
+
+<script src='../code/js/player.js'></script>

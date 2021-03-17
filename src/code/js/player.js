@@ -1,10 +1,13 @@
-var pinfo = document.getElementById("play");
-
-pinfo.currentTime = pos;
-
-setInterval(function()
+document.getElementById('ptf').addEventListener('loadeddata', function()
 {
-    var time = pinfo.currentTime;
+    var ptf = this;
 
-    setfilmcont(film, time);
-}, 60);
+    ptf.currentTime = pos;
+
+    setInterval(function()
+    {
+        var time = ptf.currentTime;
+
+        setfilmcont(film, String(time));
+    }, 60000);
+}, false);
