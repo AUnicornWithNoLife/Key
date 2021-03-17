@@ -1,6 +1,6 @@
-document.getElementById('ptf').addEventListener('loadeddata', function()
+function setupvid()
 {
-    var ptf = this;
+    var ptf = document.getElementById("ptf");
 
     ptf.currentTime = pos;
 
@@ -10,4 +10,4 @@ document.getElementById('ptf').addEventListener('loadeddata', function()
 
         setfilmcont(film, String(time));
     }, 60000);
-}, false);
+}

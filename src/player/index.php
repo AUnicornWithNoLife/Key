@@ -40,10 +40,11 @@ $file = $films["files"][$film];
         ?>
     </script>
 
+    <script src='../code/js/player.js'></script>
     <script src='../code/js/setcont.js'></script>
     <script src='../code/js/console.js'></script>
 </head>
-<body>
+<body onload='setupvid()'>
     <h1><?php echo $film; ?></h1>
 
     <div class='Line'>
@@ -53,5 +54,3 @@ $file = $films["files"][$film];
     <video id='ptf' width="100%" height="75%" controls='true' src="<?php echo "../data/films/$file" ?>" type="video/mp4"></video>
 </body>
 </html>
-
-<script src='../code/js/player.js'></script>
