@@ -1,6 +1,8 @@
 <?php
 
-
+$myfile = fopen("../data/saved/info.json", "r") or die("Unable to open file!");
+$films = json_decode(fread($myfile,filesize("../data/saved/info.json")), true);
+fclose($myfile);
 
 ?>
 
@@ -30,6 +32,15 @@
         <h2><a href='../'>Home</a></h2>
     </div>
 
-    <h3>Features to be added</h3>
+    <table>
+        <?php
+
+        foreach ($films['films'] as $film)
+        {
+            echo "<tr><th><h3>$film</h3></th><th><button>Delete!</button></th></tr>";
+        }
+
+        ?>
+    </table>
 </body>
 </html>
