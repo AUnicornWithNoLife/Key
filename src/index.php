@@ -76,6 +76,7 @@ sort($cont);
     <div class='Line'>
         <a href='./upload/'>Upload</a>
         <a href='./about.html'>About</a>
+        <a href='./edit'>Edit</a>
     </div>
 </body>
 </html>

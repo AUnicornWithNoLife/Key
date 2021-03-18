@@ -9,5 +9,5 @@ function setupvid()
         var time = ptf.currentTime;
 
         setfilmcont(film, String(time));
-    }, 60000);
+    }, 45000);
 }
