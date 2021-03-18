@@ -4,22 +4,22 @@ this system is a PHP based web video viewing system
 
 Allowed languages:
 
-WEB:
+    WEB:
 
-    UI: HTML
+        UI: HTML
 
-    STYLE: CSS
+        STYLE: CSS
 
-    SCRIPT: JS, TS
+        SCRIPT: JS, TS
 
-    LIBS: NaN
+        LIBS: NaN
 
-SERVER:
+    SERVER:
 
-    *: PHP
+        *: PHP
 
-INSTALL:
+    INSTALL:
 
-    DOWNLOAD OF FILES: SH
+        DOWNLOAD OF FILES: SH
 
-    SETUP: PHP
+        SETUP: PHP
