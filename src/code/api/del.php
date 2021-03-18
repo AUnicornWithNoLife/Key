@@ -17,7 +17,6 @@ $film = $films['file'][$file];
 unlink("../../data/art/$art");
 unlink("../../data/films/$film");
 
-unset($films['films'][$file]);
 unset($films['art'][$file]);
 unset($films['file'][$file]);
 unset($films['progress'][$file]);
