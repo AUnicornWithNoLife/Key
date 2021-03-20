@@ -32,6 +32,8 @@ fclose($myfile);
         <h2><a href='../'>Home</a></h2>
     </div>
 
+    <h3>Currently you have to delete films manually</h3>
+
     <table>
         <?php
 
