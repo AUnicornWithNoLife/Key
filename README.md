@@ -20,6 +20,6 @@ Allowed languages:
 
     INSTALL:
 
-        DOWNLOAD OF FILES: SH
+        DOWNLOAD OF FILES: SH, PHP
 
         SETUP: PHP

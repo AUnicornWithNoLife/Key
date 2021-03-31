@@ -14,9 +14,6 @@ if (! in_array($file, $films['films']))
 $art = $films['art'][$file];
 $film = $films['file'][$file];
 
-unlink("../../data/art/$art");
-unlink("../../data/films/$film");
-
 $myfile = fopen("../../data/saved/info.json", "w") or die("Unable to open file!");
 fwrite($myfile, $fj);
 fclose($myfile);
