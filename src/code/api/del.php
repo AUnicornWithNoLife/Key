@@ -21,7 +21,7 @@ unset($films['art'][$file]);
 unset($films['file'][$file]);
 unset($films['progress'][$file]);
 
-array_splice($films['films'], array_search($file, $films['films'], true));
+array_splice($films['films'], array_search($file, $films['films'], true), 1);
 
 $myfile = fopen("../../data/saved/info.json", "w") or die("Unable to open file!");
 fwrite($myfile, json_encode($films));
