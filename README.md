@@ -12,8 +12,6 @@ Allowed languages:
 
         SCRIPT: JS, TS
 
-        LIBS: NaN
-
     SERVER:
 
         *: PHP
@@ -23,3 +21,7 @@ Allowed languages:
         DOWNLOAD OF FILES: SH, PHP
 
         SETUP: PHP
+
+    BUILD:
+
+        *: SH
