@@ -14,6 +14,8 @@
     <title>Setup Key</title>
 </head>
 <body>
-    
+    <form action='./complete/' method='POST'>
+        
+    </form>
 </body>
 </html>
