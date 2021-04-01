@@ -16,6 +16,7 @@ fclose($myfile);
     <title>Edit files</title>
 
     <script src='../code/js/console.js'></script>
+    <script src='../code/js/delete.js'></script>
 
     <link rel="stylesheet" href="../code/css/main.css">
 
@@ -39,7 +40,7 @@ fclose($myfile);
 
         foreach ($films['films'] as $film)
         {
-            echo "<tr><th><h3>$film</h3></th><th><button>Delete!</button></th></tr>";
+            echo "<tr><th><h3>$film</h3></th><th><button onclick=\"del('$film');\">Delete!</button></th></tr>";
         }
 
         ?>

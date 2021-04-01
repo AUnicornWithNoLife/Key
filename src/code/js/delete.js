@@ -11,7 +11,7 @@ function httpGetAsync(theUrl, callback)
 
 function del(film)
 {
-    httpGetAsync("http://" + window.location.host + "/code/api/del.php?film=" + film, new function(resp)
+    httpGetAsync("http://" + window.location.host + "/code/api/del.php?file=" + film, new function(resp)
     {
         console.log(resp);
     });
