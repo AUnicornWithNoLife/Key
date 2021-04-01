@@ -12,7 +12,7 @@ if (! in_array($file, $films['films']))
 }
 
 $art = $films['art'][$file];
-$film = $films['file'][$file];
+$film = $films['files'][$file];
 
 unlink("../../data/art/$art");
 unlink("../../data/films/$film");
@@ -21,7 +21,7 @@ unset($films['art'][$file]);
 unset($films['file'][$file]);
 unset($films['progress'][$file]);
 
-array_splice($films['films'], array_search($file, $films['films']));
+array_splice($films['films'], array_search($file, $films['films'], true));
 
 $myfile = fopen("../../data/saved/info.json", "w") or die("Unable to open file!");
 fwrite($myfile, json_encode($films));
