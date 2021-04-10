@@ -3,3 +3,4 @@
 *.mp4
 
 /src/data/art/*
+.vscode/settings.json
