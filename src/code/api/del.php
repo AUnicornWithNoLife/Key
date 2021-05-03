@@ -18,7 +18,7 @@ unlink("../../data/art/$art");
 unlink("../../data/films/$film");
 
 unset($films['art'][$file]);
-unset($films['file'][$file]);
+unset($films['files'][$file]);
 unset($films['progress'][$file]);
 
 array_splice($films['films'], array_search($file, $films['films'], true), 1);
